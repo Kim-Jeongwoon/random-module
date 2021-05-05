@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>멋사 짝꿍뽑기</title>
+        <style type = "text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gaegu:wght@300&display=swap');
+            body{background-color:goldenrod}
+            #tab{text-align:center; font-family: 'Gaegu', cursive; letter-spacing:2px; font-size:14pt; position:absolute; top:160px; left:600px;}
+            #lion{position:absolute; top:480px; left:250px;}
+            #talk{position:absolute; top:70px; left:480px;}
+        </style>
+    </head>
+
+    <body>
+        <img src="/static/images/lion.png" id="lion" width="240" height="240"/>
+        <img src="/static/images/말풍선.png" id="talk" width="600" height="500" />
+        <table id="tab">
+            <tr>
+                <th><h1>내 운명의 짝꿍은 누구?</h1></th>
+            </tr>
+            <tr>
+                <td><p>짝꿍을 뽑아봅시다!</p></td>
+            </tr>
+            <tr>
+                <td><a href="{% url 'result' %}"><button type="button">💌 추첨 💌</button></a></td>
+            </tr>
+        </table>
+    </body>
+</html>
